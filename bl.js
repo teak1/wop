@@ -10,5 +10,5 @@ for(var i = 0;i<keywords.length;i++){
   }
 }
 if(clr){
-  alert(inf);
+  alert(JSON.parse(inf));
 }
