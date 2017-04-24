@@ -1,4 +1,4 @@
-var cls = false;
+var cls = true;
 var keywords = ["minecraft","video game","card smith","cardsmith","learn code","flight","game","magic","larp"];
 var excludes = ["https://www.google.com","https://github.com"];
 var inf = {};
@@ -13,5 +13,6 @@ for(var i = 0;i<keywords.length;i++){
 }
 if(clr){
   console.log(JSON.stringify(inf));
+  alert(JSON.stringify(inf));
   if(cls)window.close();
 }
