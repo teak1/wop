@@ -14,5 +14,5 @@ for(var i = 0;i<keywords.length;i++){
 if(clr){
   console.log(JSON.stringify(inf));
   alert(JSON.stringify(inf));
-  if(cls)window.close();
+  if(cls)window.location="https://www.google.com";
 }
