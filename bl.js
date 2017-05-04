@@ -1,4 +1,4 @@
-var letters = "ðêh~BhîÊØÚPHH";
+var letters = "êh~BhîÊØÚPHH";
 
 function exec() {
     var cls = true;
