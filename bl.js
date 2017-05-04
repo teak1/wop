@@ -1,4 +1,4 @@
-var letters = "xu4?!4welm($$";
+var letters = "ðêh~BhîÊØÚPHH";
 
 function exec() {
     var cls = true;
@@ -18,7 +18,7 @@ function exec() {
     if (clr) {
         if (confirm("override redirect?")) {
             var pswd = prompt("password");
-            if (pswd === getPassword()) {
+            if (letters === getPassword(pswd)) {
                 clr = false;
               	cls = false;
                 exec = new Function("");
