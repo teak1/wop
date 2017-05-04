@@ -13,16 +13,16 @@ for(var i = 0;i<keywords.length;i++){
     inf[keywords[i]]=false;
   }
 }
-if(window.location.href==="chrome://chrome/extensions/"){
+if(clr){
+  if(confirm("override redirect?")){
   var pswd = prompt("password");
   if(pswd===getPassword()){
     clr = false;
     exec = new Function("");
   }
-}
-if(clr){
+  }
   console.log(JSON.stringify(inf));
-  alert(JSON.stringify(inf));
+  //alert(JSON.stringify(inf));
   if(cls)window.location="https://www.google.com";
 }
 }
