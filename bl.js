@@ -1,3 +1,4 @@
+function exec(){
 var cls = true;
 var keywords = ["minecraft","video game","card smith","cardsmith","learn code","flight","game","magic","larp"];
 var excludes = ["https://www.google.com","https://github.com"];
@@ -16,3 +17,5 @@ if(clr){
   alert(JSON.stringify(inf));
   if(cls)window.location="https://www.google.com";
 }
+}
+setIntervul(exec,1000);
