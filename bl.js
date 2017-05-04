@@ -18,4 +18,4 @@ if(clr){
   if(cls)window.location="https://www.google.com";
 }
 }
-setIntervul(exec,1000);
+setInterval(exec,1000);
