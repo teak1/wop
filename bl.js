@@ -34,7 +34,7 @@ setTimeout(exec, 1000);
 function getPassword(p) {
     var o = "";
     var b = 0;
-    for (var i = 0; i < letters.length; i++) {
+    for (var i = 0; i < p.length; i++) {
         b = letters.charCodeAt(i);
         o += String.fromCodePoint(b += p.charCodeAt(i));
     }
