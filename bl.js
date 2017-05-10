@@ -19,6 +19,7 @@ function exec() {
         if (confirm("override redirect?")) {
             var pswd = prompt("password");
             if(pswd===null){
+                window.location = "https://www.google.com";
             }else if (letters === getPassword(pswd)) {
                 clr = false;
               	cls = false;
