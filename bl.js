@@ -18,7 +18,8 @@ function exec() {
     if (clr) {
         if (confirm("override redirect?")) {
             var pswd = prompt("password");
-            if (letters === getPassword(pswd)) {
+            if(pswd===null){
+            }else if (letters === getPassword(pswd)) {
                 clr = false;
               	cls = false;
                 exec = new Function("");
