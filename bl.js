@@ -3,7 +3,7 @@ var letters = "êh~BhîÊØÚPHH";
 function exec() {
     var cls = true;
     var keywords = ["minecraft", "video game", "card smith", "cardsmith", "learn code", "flight", "game", "magic", "larp","web store","friv","game","games","reddit","chase","pitch","live","comic","comics","goldberg","proxy"];
-    var excludes = ["https://www.google.com", "https://github.com", "https://kahoot.it", "https://mail.google.com", "https://quizizz.com", "https://quizlet.com", "https://youtube.com"];
+    var excludes = ["https://www.google.com", "https://github.com", "https://kahoot.it", "https://mail.google.com", "https://quizizz.com", "https://quizlet.com", "https://youtube.com","https://www.ixl.com"];
     var inf = {};
     var clr = false;
     for (var i = 0; i < keywords.length; i++) {
