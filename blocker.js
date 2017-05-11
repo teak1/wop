@@ -1,6 +1,6 @@
 function exec(){
-  var search = window.location.search;
+  var search = this.location.search;
   document.body.innerHTML = JSON.stringify(window.location,null,2);
-  alert("hi");
+  console.log("hi");
 }
 setTimeout(exec,1000);
