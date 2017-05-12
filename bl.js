@@ -1,13 +1,14 @@
 var letters = "êh~BhîÊØÚPHH";
 
 function exec() {
+    console.log("hi");
     var cls = true;
-    var keywords = ["minecraft", "video game", "card smith", "cardsmith", "learn code", "flight", "game", "magic", "larp","web store","friv","game","games","reddit","chase","pitch","live","comic","comics","goldberg","proxy"];
+    var keywords = ["minecraft", "video game", "card smith", "cardsmith", "learn code", "flight", "game", "magic", "larp","web store","friv","game","games","reddit","chase","pitch","live","comic","comics","goldberg","proxy","wolframalpha"];
     var excludes = ["https://www.google.com", "https://github.com", "https://kahoot.it", "https://mail.google.com", "https://quizizz.com", "https://quizlet.com", "https://youtube.com","https://www.ixl.com","http://www.npr.org"];
     var inf = {};
     var clr = false;
     for (var i = 0; i < keywords.length; i++) {
-        if (document.body.innerHTML.split(keywords[i]).length > 1 && !excludes.includes(window.location.origin)) {
+        if (document.body.innerHTML.split(keywords[i]).length > 1 && 0<=excludes.indexOf(window.location.origin)) {
             inf[keywords[i]] = true;
             cls=true;
             clr = true;
