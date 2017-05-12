@@ -8,14 +8,12 @@ function exec(){
       document.body.innerHTML+=scr[i].src;
       if(scr[i].src.split("?").includes(thisURL)){
         search=scr[i].src;
-      }else{
-        search+=scr[i].src+"<br/>";
       }
     }catch(e){
       document.body.innerHTML=e;
     }
   }
-  document.body.innerHTML+= JSON.stringify(this.location,null,2);
-  document.body.innerHTML+="<br/>"+search+"<br/>done!";
+  var interp = JSON.parse(search.split("").shift().join(""));
+  document.body.innerHTML+= search + "<br/>";
 }
 setTimeout(exec,1000);
