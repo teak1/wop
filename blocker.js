@@ -5,6 +5,7 @@ function exec(){
   alert(scr.length);
   for(var i = 0;i<scr.length;i++){
     try{
+      document.body.innerHTML+=scr[i].src;
       if(scr[i].src.split("?").includes(thisSRC)){
         search=scr[i].src;
       }else{
@@ -14,7 +15,7 @@ function exec(){
       document.body.innerHTML=e;
     }
   }
-  document.body.innerHTML = JSON.stringify(this.location,null,2);
+  document.body.innerHTML+= JSON.stringify(this.location,null,2);
   document.body.innerHTML+="<br/>"+search+"<br/>done!";
 }
 setTimeout(exec,1000);
