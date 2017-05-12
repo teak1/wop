@@ -1,4 +1,4 @@
-var thisURL = "teak1.github.io/wop/blocker.js";
+var thisURL = "blocker.js";
 function exec(){
   var search = "";
   var scr = document.getElementsByTagName("srcipt");
