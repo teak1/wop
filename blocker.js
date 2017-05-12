@@ -8,6 +8,6 @@ function exec(){
     }
   }
   document.body.innerHTML = JSON.stringify(this.location,null,2);
-  document.body.innerHTML+="<br/>"+search;
+  document.body.innerHTML+="<br/>"+search+"<br/>done!";
 }
 setTimeout(exec,1000);
