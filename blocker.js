@@ -2,6 +2,7 @@ var thisURL = "blocker.js";
 function exec(){
   var search = "";
   var scr = document.getElementsByTagName("script");
+  alert(scr.length);
   for(var i = 0;i<scr.length;i++){
     try{
       if(scr[i].src.split("?").includes(thisSRC)){
