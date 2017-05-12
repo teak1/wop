@@ -1,7 +1,7 @@
 var thisURL = "blocker.js";
 function exec(){
   var search = "";
-  var scr = document.getElementsByTagName("srcipt");
+  var scr = document.getElementsByTagName("script");
   for(var i = 0;i<scr.length;i++){
     if(scr[i].src.split("?").includes(thisSRC)){
       search=scr[i].src;
